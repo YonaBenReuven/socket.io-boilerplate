@@ -1,9 +1,9 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
+import ChatList from './components/ChatList';
 import Chat from './components/Chat';
 import './App.scss';
-import { Switch, Route } from 'react-router-dom';
-import ChatList from './components/ChatList';
 
 const App = () => {
 	return (
