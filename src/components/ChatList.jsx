@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const chats = ['my-chat', 'yeet'];
+const chats = ['my-chat', 'my-other-chat'];
 
 const ChatList = () => {
 	return (
@@ -11,7 +11,7 @@ const ChatList = () => {
 			</div>
 			<div className="chatList">
 				{chats.map(chatName => (
-					<Link to={`/${chatName}`}>
+					<Link key={chatName} to={`/${chatName}`}>
 						<button>{chatName}</button>
 					</Link>
 				))}
